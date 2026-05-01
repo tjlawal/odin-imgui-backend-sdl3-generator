@@ -6,7 +6,7 @@ This fork strips out all the other backends and uses the code to generate only t
 This was tested to work on Odin Compiler Version `dev-2026-04-nightly:a896fb2`.
 
 It also sets the minimum python version to 3.13.13 (not enforced, so it would still run but wont work as expected) as that provides improvements on how strings are handled in subprocess related functions.
-It is recommended you do this in a virtualenv `python -m venv .venv` installing dependencies. 
+It is recommended you do this in a virtualenv `python -m venv .venv` before installing dependencies. 
 
 ### Dependencies
 1. `git` must bin your path
