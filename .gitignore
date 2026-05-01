@@ -12,3 +12,5 @@ examples/js_wgpu/web/*
 
 examples/js_webgl/web/*
 !examples/js_webgl/web/index.html
+
+*.odin
