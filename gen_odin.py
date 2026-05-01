@@ -1017,9 +1017,9 @@ def write_typedefs(file: typing.IO, typedefs):
 	write_aligned_fields(file, aligned)
 
 def main():
-	if not sys.version.startswith("3.11.5"):
+	if not sys.version.startswith("3.13.13"):
 		print("", file=sys.stderr)
-		print(f"Warning: odin-imgui has been tested against Python version 3.11.5. (Yours: {sys.version})", file=sys.stderr)
+		print(f"Warning: odin-imgui has been tested against Python version 3.13.13. (Yours: {sys.version})", file=sys.stderr)
 		print("The script will still likely work, but it is untested!", file=sys.stderr)
 		print("", file=sys.stderr)
 
