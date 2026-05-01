@@ -9,11 +9,11 @@ It also sets the minimum python version to 3.13.13 (not enforced, so it would st
 It is recommended you do this in a virtualenv `python -m venv .venv` before installing dependencies. 
 
 ### Dependencies
-1. `git` must bin your path
-2. `dear_bindings` depends on a library called `ply` [link](https://www.dabeaz.com/ply/), this can should be installed with `python -m pip install ply`
+1. `git` must be in your path
+2. `dear_bindings` depends on a library called `ply` [link](https://www.dabeaz.com/ply/), this can should be installed with `python -m pip install ply`.
 3. Platform specific:
-		- On Windows, you need to run this command in the `Developer Command Prompt for VS $YEAR`. This script unlike the original it was forked from doesn't check for `vcvarsall.bat` in your path, it assumes you're running this inside a `Developer Command Prompt` to begin with.
-		- OSX and Linux depend on `clang` and `ar`.
+	- On Windows, you need to run this command in the `Developer Command Prompt for VS $YEAR`. This script unlike the original it was forked from doesn't check for `vcvarsall.bat` in your path, it assumes you're running this inside a `Developer Command Prompt` to begin with.
+	- OSX and Linux depend on `clang` and `ar`.
 
 ## Building
 1. Satisfy all dependencies.
