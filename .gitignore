@@ -16,3 +16,4 @@ examples/js_webgl/web/*
 *.lib
 *.a
 *.odin
+.DS_Store
