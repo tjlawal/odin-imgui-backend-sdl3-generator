@@ -86,7 +86,7 @@ compile_debug = False
 build_wasm = False
 
 # @CONFIGURE:
-build_imgui_internal = True
+build_imgui_internal = False
 
 platform_win32_like = platform.system() == "Windows"
 platform_unix_like = platform.system() == "Linux" or platform.system() == "Darwin"
