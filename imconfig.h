@@ -8,3 +8,6 @@
 // Note: as of v1.91.5, the d3d12 backend cannot be built without obsolete functions disabled,
 // as they overload ImGui_ImplDX12_Init, which is extern "C".
 #define IMGUI_DISABLE_OBSOLETE_FUNCTIONS
+
+// Disable ugly default font
+#define IMGUI_DISABLE_DEFAULT_FONT

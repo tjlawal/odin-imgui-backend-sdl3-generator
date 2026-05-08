@@ -178,7 +178,8 @@ _type_aliases = {
 
 	"size_t": "c.size_t",
 
-	"FILE": "c.FILE"
+	"FILE": "c.FILE",
+	"ImFontBaked": "ImGuiFontBaked", 
 }
 
 _pointer_aliases = {
@@ -478,6 +479,7 @@ _allowed_user_defines = [
 	"IMGUI_DISABLE_OBSOLETE_FUNCTIONS",
 	# "IMGUI_DISABLE_OBSOLETE_KEYIO",
 	"IMGUI_USE_WCHAR32",
+	"IMGUI_DISABLE_DEFAULT_FONT",
 ]
 
 # Things which are allowed in an #ifdef
@@ -842,7 +844,10 @@ def write_structs(file: typing.IO, structs):
 			write_line(file, _imgui_struct_override[entire_name])
 			continue
 
-		name = strip_imgui_branding(entire_name)
+		# Rewrite types to respect the _type_aliases dictionary
+		# NOTE(tijani): quick fix gotten from LLM, havent tested repercursions!!!!!
+		# name = strip_imgui_branding(entire_name)
+		name = make_type_odiney(entire_name)
 
 		write_line_with_comments(file, f'{name} :: struct {{', struct)
 		field_components = []
