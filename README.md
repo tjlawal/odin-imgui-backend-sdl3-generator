@@ -1,4 +1,4 @@
-# Odin ImGui Bindings Generator
+# Odin ImGui Bindings Generator - SDL3 Backend Only
 
 This is a fork of [L-4 Odin-Imgui Bindings](https://gitlab.com/L-4/odin-imgui).
 
