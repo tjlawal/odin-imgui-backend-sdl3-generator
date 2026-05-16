@@ -21,6 +21,9 @@ It is recommended you do this in a virtualenv `python -m venv .venv` before inst
 3. Run `python build.py`.
 4. Copy generated static library to whereever you need it.
 
-
 # Configuring
 Backends can be configured at the top of the `build.py` file. 
+
+# NOTE
+The resulting IMGUI binding generated may or may not work straight out the box. You'll have to test based on your setup to see, this is configured to suite my current 
+workflow so use accordingly. 
