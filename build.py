@@ -227,8 +227,8 @@ def compile(backend_deps_names: typing.Set[str], all_sources: typing.List[str], 
 		})
 
 	# Optimization flags
-	if compile_debug: compile_flags += platform_select({ "windows": ["/Od", "/Z7"], "linux, darwin": ["-g", "-O0"] })
-	else: compile_flags += platform_select({ "windows": ["/O2"], "linux, darwin": ["-O3"] })
+	if compile_debug: compile_flags += platform_select({ "windows": ["/Od", "/Z7", "/MTd"], "linux, darwin": ["-g", "-O0"] })
+	else: compile_flags += platform_select({ "windows": ["/O2", "/MT"], "linux, darwin": ["-O3"] })
 
 	if not wasm:
 		# Find and copy imgui backend sources to temp folder
