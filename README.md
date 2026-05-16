@@ -19,7 +19,7 @@ It is recommended you do this in a virtualenv `python -m venv .venv` before inst
 1. Satisfy all dependencies.
 2. Clone this repository.
 3. Run `python build.py`.
-4. Copy generated static library to whereever you need it.
+4. Copy generated static library and binding to your project.
 
 # Configuring
 Backends can be configured at the top of the `build.py` file. 
